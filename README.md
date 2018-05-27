@@ -23,3 +23,5 @@ You should create one R script called run_analysis.R that does the following.
 ## About the R script and the code book
 
 I've created an R script called "run_analysis.R" which strictly follows steps 1-5 from the project guidelines including unzipping the files and seting up of the correct directories.
+
+All work is performed in R-Studio with R Version 3.5.0 (2018-04-23).
