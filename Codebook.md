@@ -23,12 +23,12 @@ The R script performs the following actions:
 
 4. Reads and stores the activities text file and applies the 6 descriptive activity names to the mergedActivities dataset. It also sets the names to be only lowercase for better readability. The activities we're working with are:
 ```
-walking
-walkingupstairs
-walkingdownstairs
-sitting
-standing
-laying.
+  walking
+  walkingupstairs
+  walkingdownstairs
+  sitting
+  standing
+  laying
 ```
   
  5. Joins the 3 merged datasets in one tidy dataset called TidyData with dimensions 10299 x 68. We have the SubjectNum, ActivityName and the only 66 variables that measure the mean and standard devation as described in step 3. The script also saves the cleaned data in a file called "Tidy_Data.txt"
