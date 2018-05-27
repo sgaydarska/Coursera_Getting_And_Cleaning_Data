@@ -53,7 +53,8 @@ head(TidyData)
 write.table(TidyData, "Tidy_Data.txt", row.names = FALSE)
 
 # Creating independent tidy data set with the average of each variable for each activity and each subject 
-TidyData_AVG <- aggregate(mergedData, by = list(TidyData$ActivityName, TidyData$SubjectNum), mean)
+TidyData_AVG <- aggregate(mergedData, by = list(TidyData$SubjectNum, TidyData$ActivityName), mean) %>%
+  rename(SubjectNum = Group.1, ActivityName = Group.2)
 head(TidyData_AVG)
 write.table(TidyData_AVG, "Tidy_Data_Averages.txt", row.names = FALSE)
 
