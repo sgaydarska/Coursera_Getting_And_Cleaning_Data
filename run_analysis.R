@@ -50,10 +50,10 @@ TidyData <- cbind(mergedSubject, mergedActivity, mergedData)
 head(TidyData)
 
 # Saving the cleaned data
-write.table(TidyData, "Tidy_Data.txt")
+write.table(TidyData, "Tidy_Data.txt", row.names = FALSE)
 
 # Creating independent tidy data set with the average of each variable for each activity and each subject 
 TidyData_AVG <- aggregate(mergedData, by = list(TidyData$ActivityName, TidyData$SubjectNum), mean)
 head(TidyData_AVG)
-write.table(TidyData_AVG, "Tidy_Data_Averages.txt")
+write.table(TidyData_AVG, "Tidy_Data_Averages.txt", row.names = FALSE)
 
