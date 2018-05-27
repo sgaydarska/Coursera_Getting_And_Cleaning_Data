@@ -16,8 +16,8 @@ The R script performs the following actions:
 
 2. Reads the training and testing datasets and joins them based on the containing data to create the following 3 data sets:
    - mergedData with dimensions: 10299 x 561 that joins the testing and training features files
-   - mergedActivities with dimensions: 10299 x 1that joins the  testing and training activities files. The only column "V1" is renamed to "ActivityName".
-   - mergedSubjects with dimensions: 10299 x 1that joins the testing and training subject files. The only column "V1" is renamed to "SubjectNum".
+   - mergedActivities with dimensions: 10299 x 1 that joins the  testing and training activities files. The only column "V1" is renamed to "ActivityName".
+   - mergedSubjects with dimensions: 10299 x 1that joins the testing and training subject files. The only column "V1" is renamed to "SubjectNum". We have 30 subjects as 30 people have participated in the experiment. 
    
 3. Reads and stores the features text file and based on it extracts only the variables that measure the mean or standard deviations which results in subsetting for 66 variables out of 561. To make the variable naming better it removes the "()" and "-" symbols and capitalizes the "S" in std and "M" in mean.
 
